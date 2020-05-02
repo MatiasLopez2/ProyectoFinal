@@ -1,0 +1,273 @@
+/*****************     CSS  PAGINAS WEB ALMAS     ****************/
+/* CONTENIDO GENERAL */
+@font-face {
+  font-family: "Bureau Trend";
+  src: url("Bureau_Trend.eot?") format("eot"), url("Bureau_Trend.woff") format("woff"), url("Bureau_Trend.ttf") format("truetype"), url("Bureau_Trend.svg#Bureau-Trend") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+header#header {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  background-color: #656078;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 999; }
+
+div#header-nav {
+  width: 44%;
+  display: flex; }
+  div#header-nav nav {
+    width: 100%; }
+    div#header-nav nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      margin-top: 37px; }
+      div#header-nav nav ul a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #A2C2C9;
+        transition: all 0.5s; }
+        div#header-nav nav ul a:hover {
+          color: white;
+          font-weight: bolder;
+          font-size: 16px; }
+
+#header-carrito a img {
+  width: 36px;
+  margin-right: 120px; }
+
+body {
+  font-family: arial,sans-serif; }
+
+main#main-productos {
+  background-image: url(../img/marmol.jpg);
+  margin-top: -18px; }
+  main#main-productos-ninos {
+    background-image: linear-gradient(to bottom, #fcff99, #91e842);
+    margin-top: -18px; }
+
+div#header-compra {
+  display: flex;
+  align-items: center; }
+
+input.header-busq {
+  width: 120px;
+  border-radius: 40px;
+  font-size: 18px; }
+
+footer#footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #656078; }
+
+div#texto-footer {
+  margin-left: 4px;
+  margin-top: 40px;
+  color: white; }
+
+div#footer-consulta {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white; }
+
+p.ayuda-footer {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center; }
+
+a.compras-footer {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  text-align: center; }
+
+div#redes {
+  height: 30px;
+  width: 40%;
+  display: flex;
+  justify-content: center; }
+  div#redes a img {
+    margin-top: 10px;
+    width: 20px;
+    margin-left: 40px; }
+
+div#footer-logo {
+  width: 14%; }
+
+/* CONTENIDO INDEX */
+div#img-principal {
+  height: 700px;
+  width: 100%;
+  margin-top: 10px; }
+  div#img-principal img {
+    width: 100%;
+    height: 700px; }
+
+div#productos-index {
+  margin-top: 4%; }
+
+div#imagen-principal {
+  width: 15%;
+  margin-top: 20px; }
+  div#imagen-principal h1 a {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: #D3D3D3; }
+    div#imagen-principal h1 a:hover {
+      text-decoration: none;
+      color: white; }
+
+.detalle-seccion {
+  height: 300px;
+  width: 27%;
+  margin-top: 40px;
+  background-color: #FF8000;
+  opacity: 65%; }
+  .detalle-seccion:hover {
+    background-color: #FF8000;
+    opacity: 100%; }
+  .detalle-seccion a {
+    text-decoration: none; }
+
+div#secciones {
+  display: flex;
+  justify-content: space-around; }
+
+h2.detalle-seccion-h2 {
+  font-size: 66px;
+  text-align: center;
+  margin-top: 26%;
+  color: white; }
+
+div#muestra-producto-index {
+  display: flex;
+  justify-content: center; }
+
+img.imagen-producto {
+  height: 230px;
+  width: 16%;
+  margin: 80px 20px 0px 0px; }
+
+.container {
+  padding-bottom: 60px; }
+
+/* CONTENIDO SECCIONES */
+#titulo h2 {
+  font-size: 100px;
+  text-align: center;
+  letter-spacing: 30px;
+  margin-top: 8%;
+  padding-top: 30px;
+  font-family: "Bureau Trend";
+  color: #EDBB5C;
+  transition: all 2s; }
+
+#titulo-ninos h2 {
+  font-size: 90px;
+  text-align: center;
+  letter-spacing: 30px;
+  margin-top: 8%;
+  padding-top: 30px;
+  font-family: cursive;
+  transition: all 2s;
+  color: #9BC777; }
+
+div#productos {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 80px; }
+
+div#busqueda-productos {
+  width: 60%;
+  text-align: right;
+  margin-right: 40px; }
+
+div.tipo {
+  margin-bottom: 20px;
+  font-family: cursive; }
+
+.tipo label {
+  margin-right: 26px; }
+
+table#tab-listado {
+  width: 100%; }
+
+div#muestra-productos {
+  width: 100%; }
+
+#tab-listado td img {
+  margin: 6px;
+  width: 93%; }
+
+div#img-contacto {
+  height: 1000px;
+  width: 100%;
+  background-image: url(../img/contacto.png);
+  background-position-x: center;
+  margin-top: -18px;
+  margin-bottom: -70px; }
+
+/********         Carousel             *********/
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -40px; }
+  .blog .carousel-indicators li {
+    height: 4px;
+    width: 20px;
+    background: #a3a3a3;
+    border-radius: 50%; }
+  .blog .carousel-indicators .active {
+    background: #707070; }
+
+/************   CONTACTO  ************/
+div#form-menu {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  background-color: whitesmoke; }
+
+.form-control {
+  transition: all 1s; }
+
+textarea#mensaje {
+  width: 400px;
+  display: block;
+  margin-bottom: 20px; }
+
+button#btn-contacto {
+  margin-bottom: 12px;
+  margin-top: 20px;
+  background-color: #EDBB5C;
+  color: white;
+  display: block;
+  padding: 10px; }
+  button#btn-contacto:hover {
+    background-color: white;
+    color: #EDBB5C;
+    transform: skewX(10deg); }
+
+div#btn_contacto {
+  margin-bottom: 30px;
+  color: white;
+  padding: 8px; }
+
+form.form-horizontal {
+  text-align: -webkit-center;
+  margin-top: 10%; }
+  form.form-horizontal input {
+    transition: all 2s; }
+    form.form-horizontal input:focus {
+      width: 500px;
+      font-size: 20px; }
