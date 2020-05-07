@@ -43,12 +43,13 @@ div#header-nav {
 body {
   font-family: arial,sans-serif; }
 
-main#main-productos {
+main.main-productos {
   background-image: url(../img/marmol.jpg);
   margin-top: -18px; }
-  main#main-productos-ninos {
-    background-image: linear-gradient(to bottom, #fcff99, #91e842);
-    margin-top: -18px; }
+
+main#main-ninos {
+  background-image: linear-gradient(to bottom, #fcff99, #91e842);
+  margin-top: -18px; }
 
 div#header-compra {
   display: flex;
@@ -65,9 +66,10 @@ footer#footer {
   background-color: #656078; }
 
 div#texto-footer {
-  margin-left: 4px;
+  margin-left: 45px;
   margin-top: 40px;
-  color: white; }
+  color: white;
+  text-align: center; }
 
 div#footer-consulta {
   display: flex;
@@ -87,10 +89,12 @@ a.compras-footer {
   color: white;
   font-size: 15px;
   text-align: center; }
+  a.compras-footer:hover {
+    color: #EDBB5C; }
 
 div#redes {
   height: 30px;
-  width: 40%;
+  width: 100%;
   display: flex;
   justify-content: center; }
   div#redes a img {
@@ -99,16 +103,16 @@ div#redes {
     margin-left: 40px; }
 
 div#footer-logo {
-  width: 14%; }
+  width: 24%; }
 
 /* CONTENIDO INDEX */
 div#img-principal {
-  height: 700px;
+  height: 650px;
   width: 100%;
   margin-top: 10px; }
   div#img-principal img {
     width: 100%;
-    height: 700px; }
+    height: 650px; }
 
 div#productos-index {
   margin-top: 4%; }
@@ -124,6 +128,106 @@ div#imagen-principal {
     div#imagen-principal h1 a:hover {
       text-decoration: none;
       color: white; }
+
+a.sale:hover {
+  text-decoration: none; }
+
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+h3.display {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  transition: all 1s;
+  color: #EDBB5C;
+  font-size: 55px; }
+  h3.display:hover {
+    font-size: 65px; }
+
+h2.display {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  transition: all 1s;
+  color: #EDBB5C;
+  font-size: 120px; }
+  h2.display:hover {
+    font-size: 130px; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.1); }
+  25% {
+    transform: scale(0.8); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1.1); } }
+
+h3.display-2 {
+  margin-bottom: 10%;
+  animation: pulse 4s linear infinite;
+  transform-origin: 50% 50%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #FF8000;
+  font-size: 80px;
+  font-weight: bold; }
+  h3.display-2:hover {
+    font-size: 90px;
+    font-weight: bold; }
+
+@keyframes tada {
+  0% {
+    transform: scale(1); }
+  5.55556% {
+    transform: scale(0.9) rotate(-8deg); }
+  11.11111% {
+    transform: scale(0.9) rotate(-8deg); }
+  16.66667% {
+    transform: scale(1.3) rotate(8deg); }
+  22.22222% {
+    transform: scale(1.3) rotate(-8deg); }
+  27.77778% {
+    transform: scale(1.3) rotate(8deg); }
+  33.33333% {
+    transform: scale(1.3) rotate(-8deg); }
+  38.88889% {
+    transform: scale(1.3) rotate(8deg); }
+  44.44444% {
+    transform: scale(1) rotate(0); }
+  100% {
+    transform: scale(1) rotate(0); } }
+
+.display-3 {
+  animation: tada 3.6s linear infinite;
+  transform-origin: 50% 50%;
+  font-family: sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: white;
+  margin: 0px 64% 0px 0px; }
 
 .detalle-seccion {
   height: 300px;
@@ -167,8 +271,7 @@ img.imagen-producto {
   margin-top: 8%;
   padding-top: 30px;
   font-family: "Bureau Trend";
-  color: #EDBB5C;
-  transition: all 2s; }
+  color: #EDBB5C; }
 
 #titulo-ninos h2 {
   font-size: 90px;
@@ -218,6 +321,43 @@ div#img-contacto {
   margin-top: -18px;
   margin-bottom: -70px; }
 
+button.btn.btn-primary {
+  background-color: #656078; }
+  button.btn.btn-primary:hover {
+    color: #656078;
+    background-color: white; }
+
+a.muestra_imagen {
+  width: 100%;
+  transition: all 2s; }
+  a.muestra_imagen:hover {
+    width: 110%; }
+
+figure {
+  margin: 0 0 1rem;
+  border: 1px solid lightgray;
+  width: 24%;
+  height: 448px;
+  display: inline-table;
+  margin-left: 32px;
+  text-align-last: center;
+  padding: 11px;
+  background-color: white; }
+
+.contenidoGaleria {
+  text-align: center; }
+
+.container {
+  padding-bottom: 16px;
+  margin-top: 7px; }
+
+div#titulo-ninos {
+  text-align: -webkit-center;
+  margin-top: 106px; }
+
+#titulo-ninos img {
+  padding-top: 50px; }
+
 /********         Carousel             *********/
 .blog .carousel-indicators {
   left: 0;
@@ -230,6 +370,29 @@ div#img-contacto {
     border-radius: 50%; }
   .blog .carousel-indicators .active {
     background: #707070; }
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out; }
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 35%;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center; }
 
 /************   CONTACTO  ************/
 div#form-menu {
@@ -271,3 +434,19 @@ form.form-horizontal {
     form.form-horizontal input:focus {
       width: 500px;
       font-size: 20px; }
+
+/************   MEDIA QUERYS  ************/
+@media (min-width: 360px) and (max-width: 500px) {
+  #titulo h2 {
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 24px;
+    margin-top: 8%;
+    padding-top: 70px;
+    font-family: "Bureau Trend";
+    color: #EDBB5C;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; }
+  div#imagen-principal {
+    margin-top: 20px; } }
